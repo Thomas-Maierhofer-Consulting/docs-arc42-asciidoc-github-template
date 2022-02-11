@@ -1,0 +1,24 @@
+= ARC42 ASCIIDOC TEMPLATE FOR GITHUB
+
+<motivation> Make a github tailored version of the ARC42 architecture documentation template in asciidoc format to be used on any github repository
+
+// configure EN settings for asciidoc
+include::src/config.adoc[]
+
+
+xref:arc42-template.adoc[The Template]
+
+link:https://thomas-maierhofer-consulting.github.io/docs-arc42-asciidoc-github-template/[]
+
+== Original Content
+ARC42 is a architecture documentation template developed by Gernot Starke and Peter Hruschka.
+
+* https://arc42.org/
+* https://arc42.org/license
+
+== License
+This work is licensed under a
+Creative Commons Attribution-ShareAlike 4.0 International License
+http://creativecommons.org/licenses/by-sa/4.0/[CC BY-SA 4.0]
+
+image::https://licensebuttons.net/l/by-sa/4.0/88x31.png[]
