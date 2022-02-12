@@ -1,8 +1,9 @@
 {
     "asciidoc.use_kroki": true,
-    "asciidoc.asciidoctor_command": "asciidoctor --attribute=nofooter -a allow-uri-read -r asciidoctor-diagram -r asciidoctor-bibtex",
+    "asciidoc.asciidoctor_command": "asciidoctor --attribute=nofooter -a allow-uri-read -r asciidoctor-diagram -r asciidoctor-kroki",
 
     "cSpell.words": [
+        "maierhofer",
         "plantuml"
     ],
 }

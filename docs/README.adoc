@@ -1,80 +1,55 @@
 include::config/asciidoc.cfg[]
 :toc-title: Documentation
 
+= Documentation
+
+== xref:getting-started.adoc[Getting Started]
+
+If you want to know where to start and how to get used to it.
+
+== xref:examples.adoc[Examples]
+
+If you want to know how to use it.
+
+== xref:api-reference.adoc[API Reference]
+
+If you need to know the specific details of the public API
+
+== xref:architecture.adoc[Architecture]
+
+If you want to know the architecture in general and the decisions which led to it.
+
+== xref:development-environment.adoc[Development Environment Setup]
+
+If you want to know how to set up your system for development
+
+== xref:ci-cd-environment.adoc[Continuos Integration / Continuos Deployment]
+
+If you want to know how CI / CD is organized
+
+== xref:Contribution.adoc[Contribution]
+
+If you want to know how to contribute code, fix bugs and make pull requests
 
 
-= ARC42 ASCIIDOC TEMPLATE FOR GITHUB
-
-<motivation> Make a github tailored version of the ARC42 architecture documentation template in asciidoc format to be used on any github repository
-
-
-
-xref:architecture.adoc[Architecture]
-
-== References
-link:https://thomas-maierhofer-consulting.github.io/docs-arc42-asciidoc-github-template/[On Github Pages]
-
-link:https://github.com/Thomas-Maierhofer-Consulting/docs-arc42-asciidoc-github-template[Github Repository]
-
-
-
-== Original Content
-ARC42 is a architecture documentation template developed by Gernot Starke and Peter Hruschka.
-
-* https://arc42.org/
-* https://arc42.org/license
-
-== License
-This work is licensed under a
-Creative Commons Attribution-ShareAlike 4.0 International License
-http://creativecommons.org/licenses/by-sa/4.0/[CC BY-SA 4.0]
-
-image::https://licensebuttons.net/l/by-sa/4.0/88x31.png[]
-
-
-== Playground
-
-https://plantuml.com/de/skinparam
-
-// !theme cerulean-outline
-// !theme materia-outline
-// !theme cyborg-outline
-
-[plantuml, target=diagram-classes, format=svg, id="myDiagram"]
+[plantuml, target=documentation-workflow, format=svg, id="contribution"]
 ....
 include::config/plantuml.cfg[]
-class BlockProcessor
-class DiagramBlock
-class DitaaBlock
-class PlantUmlBlock
+start
 
-BlockProcessor <|-- DiagramBlock
-DiagramBlock <|-- DitaaBlock
-DiagramBlock <|-- PlantUmlBlock
-....
+if (Know Alredy Everything?) then (yes)
+  :Contribute;
 
-[ditaa, format=svg]
-....
-                   +-------------+
-                   | Asciidoctor |-------+
-                   |   diagram   |       |
-                   +-------------+       | PNG out
-                       ^                 |
-                       | ditaa in        |
-                       |                 v
- +--------+   +--------+----+    /---------------\
- |        | --+ Asciidoctor +--> |               |
- |  Text  |   +-------------+    |   Beautiful   |
- |Document|   |   !magic!   |    |    Output     |
- |     {d}|   |             |    |               |
- +---+----+   +-------------+    \---------------/
-     :                                   ^
-     |          Lots of work             |
-     +-----------------------------------+
-....
+  if (All fine?) then (yes)
+    :Read the Documentation;
+    :Contribute;
+  else (no)
 
+  endif
 
-[plantuml, target=diagram-help, format=svg]
-....
-help skinparams
+else (no)
+:Read the Documentation;
+endif
+
+stop
 ....

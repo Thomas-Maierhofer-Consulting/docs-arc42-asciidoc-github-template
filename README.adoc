@@ -1,13 +1,26 @@
 = ASCIIDOC Documentation Template for GitHub
 
-<motivation> Make a github tailored version of the ARC42 architecture documentation template in asciidoc format to be used on any github repository
+Template for technical documentation of libraries, subsystems and systems with AsciiDoc. + 
+This is not intended to be a template for end user documentation of a system.
 
-https://github.com/Thomas-Maierhofer-Consulting/docs-github-repo-template
-
-https://thomas-maierhofer-consulting.github.io/docs-github-repo-template/
+link:http://documentation-template.github.maierhofer.software/[Documentation Template - GitHub-Page]
 
 == Introduction
-Providing an easy way to include <<asciidoc>> base documentation in a github repository.
+Providing and maintaining documentation for *developers*, *agile testers*, and *DevOps engineers* side by
+side with the source-code reduces the maintenance effort. The motivation behind this template is to provide
+ an easy way to include <<asciidoc>> based documentation in a GitHub repository.
+
+=== Documentation Skeleton
+
+The topics of the skeleton are parts which are often integrated in repositories to cope with the 
+different needs of developers and DevOps engineers. 
+
+* Getting Started (only page)
+* Reference / API Documentation (only page)
+* Examples Documentation (only page)
+* Architecture Documentation - The <<arc42>> Template (complete - with help)
+* Development Environment Setup (only page)
+* Continuos Integration / Continuos Deployment Setup (only page)
 
 === Documentation Publishing 
 The documentation is written in the <<asciidoc>> language and processed by a GitHub action 
@@ -17,10 +30,13 @@ which stores the resulting HTML pages in the gh-pages branch which is published 
 The Repository contains a Visual Studio Code configuration, so that external images and Diagrams are rendered in the 
 asciidoc preview extension.
 
+=== Diagraming
+The <<asciidoc-diagram>> extension is enabled in the github action and the vscode editing preview. Among others it allows to integrate <<plantuml>> diagrams.
+
 == References
 
 [#asciidoc]
-[reftext="Asciidoc"]
+[reftext="AsciiDoc"]
 === Asciidoc / Asciidoctor
 
 * Asciidoctor Homepage + 
@@ -29,6 +45,12 @@ https://asciidoctor.org/
 * Asciidoctor Repositories + 
 https://github.com/asciidoctor
 
+* Asciidoc Writers Guide + 
+https://asciidoctor.org/docs/asciidoc-writers-guide/
+
+
+[#asciidoc-diagram]
+[reftext="AsciiDoc-Diagramming"]
 * Diagramming extension for asciidoc + 
 https://github.com/asciidoctor/asciidoctor-diagram
 
@@ -36,7 +58,8 @@ https://github.com/asciidoctor/asciidoctor-diagram
 https://github.com/darshandsoni/asciidoctor-skins
 
 === PlantUML
-
+[#plantuml]
+[reftext="PlantUML"]
 * Plantuml Homepage + 
 https://plantuml.com
 

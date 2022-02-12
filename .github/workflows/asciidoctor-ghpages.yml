@@ -25,10 +25,10 @@ jobs:
       uses: manoelcampos/asciidoctor-ghpages-action@v2
       with:
         asciidoctor_params: --attribute=nofooter -a allow-uri-read -r asciidoctor-diagram -r asciidoctor-kroki
-        pdf_build: true
+        pdf_build: false
         # adoc_file_ext: .ascii # default is .adoc
         source_dir: docs/ # default is .
-        slides_build: true
-        slides_main_adoc_file: README
+        slides_build: false
+        # slides_main_adoc_file: README
         # pre_build:
         # post_build:

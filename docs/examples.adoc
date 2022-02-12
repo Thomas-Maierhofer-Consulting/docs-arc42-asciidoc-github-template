@@ -1,0 +1,8 @@
+include::config/asciidoc.cfg[]
+:toc-title: Examples
+
+= Examples
+
+== Example 1
+
+== Example 2

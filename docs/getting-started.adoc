@@ -1,0 +1,12 @@
+include::config/asciidoc.cfg[]
+:toc-title: Getting Started
+
+= Getting Started
+
+== Introduction
+
+== Development Machine Setup
+
+== Compiling and Debugging
+
+== Coding and Pull Requests
