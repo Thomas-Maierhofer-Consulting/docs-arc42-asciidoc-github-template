@@ -1,0 +1,7 @@
+// configuration settings
+// ==================================
+
+// Table of Contents
+:toc: left
+
+:imagesdir: ./images

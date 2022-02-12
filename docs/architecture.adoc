@@ -1,13 +1,7 @@
-// header file for arc42-template,
-// including all help texts
-//
-// ====================================
-// configure EN settings for asciidoc
-include::src/config.adoc[]
+include::config/asciidoc.cfg[]
+:toc-title: Architecture
 
-= image:arc42-logo.png[arc42] Template
-// toc-title definition MUST follow document title without blank line!
-:toc-title: Table of Contents
+= Architecture
 
 //additional style for arc42 help callouts
 ifdef::backend-html5[]
@@ -24,10 +18,6 @@ ifdef::backend-html5[]
 ++++
 endif::backend-html5[]
 
-include::src/about-arc42.adoc[]
-
-// horizontal line
-***
 
 [role="arc42help"]
 ****
@@ -45,50 +35,56 @@ For documentation of your own system you use better the _plain_ version.
 
 <<<<
 // 1. Introduction and Goals
-include::src/01_introduction_and_goals.adoc[]
+include::architecture/01_introduction_and_goals.adoc[]
 
 <<<<
 // 2. Architecture Constraints
-include::src/02_architecture_constraints.adoc[]
+include::architecture/02_architecture_constraints.adoc[]
 
 <<<<
 // 3. System Scope and Context
-include::src/03_system_scope_and_context.adoc[]
+include::architecture/03_system_scope_and_context.adoc[]
 
 <<<<
 // 4. Solution Strategy
-include::src/04_solution_strategy.adoc[]
+include::architecture/04_solution_strategy.adoc[]
 
 <<<<
 // 5. Building Block View
-include::src/05_building_block_view.adoc[]
+include::architecture/05_building_block_view.adoc[]
 
 <<<<
 // 6. Runtime View
-include::src/06_runtime_view.adoc[]
+include::architecture/06_runtime_view.adoc[]
 
 <<<<
 // 7. Deployment View
-include::src/07_deployment_view.adoc[]
+include::architecture/07_deployment_view.adoc[]
 
 <<<<
 // 8. Concepts
-include::src/08_concepts.adoc[]
+include::architecture/08_concepts.adoc[]
 
 <<<<
 // 9. Design Decisions
-include::src/09_design_decisions.adoc[]
+include::architecture/09_design_decisions.adoc[]
 
 <<<<
 // 10. Quality Scenarios
-include::src/10_quality_scenarios.adoc[]
+include::architecture/10_quality_scenarios.adoc[]
 
 <<<<
 // 11. Technical Risks
-include::src/11_technical_risks.adoc[]
+include::architecture/11_technical_risks.adoc[]
 
 <<<<
 // 12. Glossary
-include::src/12_glossary.adoc[]
+include::architecture/12_glossary.adoc[]
+
+:numbered!:
+// horizontal line
+***
+
+include::architecture/about-arc42.adoc[]
 
 

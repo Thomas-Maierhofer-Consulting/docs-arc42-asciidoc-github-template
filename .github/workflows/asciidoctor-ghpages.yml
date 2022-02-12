@@ -24,10 +24,10 @@ jobs:
     - name: asciidoctor-ghpages
       uses: manoelcampos/asciidoctor-ghpages-action@v2
       with:
-        asciidoctor_params: --attribute=nofooter -a allow-uri-read
+        asciidoctor_params: --attribute=nofooter -a allow-uri-read -r asciidoctor-diagram -r asciidoctor-kroki
         pdf_build: true
         # adoc_file_ext: .ascii # default is .adoc
-        source_dir: arc42/ # default is .
+        source_dir: docs/ # default is .
         slides_build: true
         slides_main_adoc_file: README
         # pre_build:

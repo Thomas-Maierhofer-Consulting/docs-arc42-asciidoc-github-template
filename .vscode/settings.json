@@ -1,0 +1,8 @@
+{
+    "asciidoc.use_kroki": true,
+    "asciidoc.asciidoctor_command": "asciidoctor --attribute=nofooter -a allow-uri-read -r asciidoctor-diagram -r asciidoctor-bibtex",
+
+    "cSpell.words": [
+        "plantuml"
+    ],
+}

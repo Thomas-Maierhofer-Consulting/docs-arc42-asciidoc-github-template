@@ -1,12 +1,58 @@
-= ARC42 ASCIIDOC TEMPLATE FOR GITHUB
+= ASCIIDOC Documentation Template for GitHub
 
 <motivation> Make a github tailored version of the ARC42 architecture documentation template in asciidoc format to be used on any github repository
 
-== Original Content
+https://github.com/Thomas-Maierhofer-Consulting/docs-github-repo-template
+
+https://thomas-maierhofer-consulting.github.io/docs-github-repo-template/
+
+== Introduction
+Providing an easy way to include <<asciidoc>> base documentation in a github repository.
+
+=== Documentation Publishing 
+The documentation is written in the <<asciidoc>> language and processed by a GitHub action 
+which stores the resulting HTML pages in the gh-pages branch which is published as github pages.
+
+=== Documentation Editing
+The Repository contains a Visual Studio Code configuration, so that external images and Diagrams are rendered in the 
+asciidoc preview extension.
+
+== References
+
+[#asciidoc]
+[reftext="Asciidoc"]
+=== Asciidoc / Asciidoctor
+
+* Asciidoctor Homepage + 
+https://asciidoctor.org/
+
+* Asciidoctor Repositories + 
+https://github.com/asciidoctor
+
+* Diagramming extension for asciidoc + 
+https://github.com/asciidoctor/asciidoctor-diagram
+
+* Asciidoctor Skins + 
+https://github.com/darshandsoni/asciidoctor-skins
+
+=== PlantUML
+
+* Plantuml Homepage + 
+https://plantuml.com
+
+* Skinparam + 
+https://plantuml.com/en/skinparam
+
+[#arc42]
+[reftext="Arc42"]
+=== image:docs/images/arc42-logo.png[arc42] Template
 ARC42 is a architecture documentation template developed by Gernot Starke and Peter Hruschka.
 
-* https://arc42.org/
-* https://arc42.org/license
+* Arc42 Homepage + 
+https://arc42.org/
+
+* Arc42 License + 
+https://arc42.org/license
 
 == License
 This work is licensed under a

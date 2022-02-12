@@ -1,0 +1,80 @@
+include::config/asciidoc.cfg[]
+:toc-title: Documentation
+
+
+
+= ARC42 ASCIIDOC TEMPLATE FOR GITHUB
+
+<motivation> Make a github tailored version of the ARC42 architecture documentation template in asciidoc format to be used on any github repository
+
+
+
+xref:architecture.adoc[Architecture]
+
+== References
+link:https://thomas-maierhofer-consulting.github.io/docs-arc42-asciidoc-github-template/[On Github Pages]
+
+link:https://github.com/Thomas-Maierhofer-Consulting/docs-arc42-asciidoc-github-template[Github Repository]
+
+
+
+== Original Content
+ARC42 is a architecture documentation template developed by Gernot Starke and Peter Hruschka.
+
+* https://arc42.org/
+* https://arc42.org/license
+
+== License
+This work is licensed under a
+Creative Commons Attribution-ShareAlike 4.0 International License
+http://creativecommons.org/licenses/by-sa/4.0/[CC BY-SA 4.0]
+
+image::https://licensebuttons.net/l/by-sa/4.0/88x31.png[]
+
+
+== Playground
+
+https://plantuml.com/de/skinparam
+
+// !theme cerulean-outline
+// !theme materia-outline
+// !theme cyborg-outline
+
+[plantuml, target=diagram-classes, format=svg, id="myDiagram"]
+....
+include::config/plantuml.cfg[]
+class BlockProcessor
+class DiagramBlock
+class DitaaBlock
+class PlantUmlBlock
+
+BlockProcessor <|-- DiagramBlock
+DiagramBlock <|-- DitaaBlock
+DiagramBlock <|-- PlantUmlBlock
+....
+
+[ditaa, format=svg]
+....
+                   +-------------+
+                   | Asciidoctor |-------+
+                   |   diagram   |       |
+                   +-------------+       | PNG out
+                       ^                 |
+                       | ditaa in        |
+                       |                 v
+ +--------+   +--------+----+    /---------------\
+ |        | --+ Asciidoctor +--> |               |
+ |  Text  |   +-------------+    |   Beautiful   |
+ |Document|   |   !magic!   |    |    Output     |
+ |     {d}|   |             |    |               |
+ +---+----+   +-------------+    \---------------/
+     :                                   ^
+     |          Lots of work             |
+     +-----------------------------------+
+....
+
+
+[plantuml, target=diagram-help, format=svg]
+....
+help skinparams
+....
